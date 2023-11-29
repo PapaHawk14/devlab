@@ -5,5 +5,5 @@ echo -e " \033[33;2m   NOTE: in its entirety.   \033[0m"
 
 git add *
 git stage *
-git commit --all 
+git commit -am $1
 git push
