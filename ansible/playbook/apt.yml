@@ -1,4 +1,4 @@
-- hosts: proxmox
+- hosts: allnetproxmox
   become: yes
   tasks:
     - name: apt
