@@ -1,4 +1,4 @@
-- hosts: allnetproxmox
+- hosts: piroot
   become: yes
   tasks:
     - name: apt
