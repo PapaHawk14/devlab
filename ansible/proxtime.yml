@@ -1,0 +1,8 @@
+- hosts: proxmox
+  become: yes
+  become_user: root
+  become_method: su
+  tasks:
+    - name: Update timezone all Proxmox Servers
+      community.general.timezone:
+        name: Australia/Adelaide

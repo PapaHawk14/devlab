@@ -1,0 +1,6 @@
+- hosts: vm
+  become: yes
+  tasks:
+    - name: Update timezone all VM's
+      community.general.timezone:
+        name: Australia/Adelaide

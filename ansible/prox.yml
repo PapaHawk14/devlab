@@ -3,7 +3,7 @@
   become_user: root
   become_method: su
   tasks:
-    - name: apt
+    - name: apt update and upgrade all Proxmox Servers
       apt:
         update_cache: yes
         upgrade: 'yes'

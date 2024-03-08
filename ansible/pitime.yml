@@ -1,0 +1,6 @@
+- hosts: pi
+  become: yes
+  tasks:
+    - name: Update timezone all PI's
+      community.general.timezone:
+        name: Australia/Adelaide

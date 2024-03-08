@@ -1,0 +1,6 @@
+- hosts: piroot
+  become: yes
+  tasks:
+    - name: Update timezone all PI's (root)
+      community.general.timezone:
+        name: Australia/Adelaide
