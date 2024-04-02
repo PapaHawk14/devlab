@@ -1,5 +1,7 @@
 - hosts: pi
   become: yes
+  become_user: root
+  become_method: su
   tasks:
     - name: apt update and upgrade all PI's
       apt:

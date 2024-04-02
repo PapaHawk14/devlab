@@ -1,6 +1,6 @@
 - hosts: proxmox
   become: yes
-  become_user: root
+  become_user: prox
   become_method: su
   tasks:
     - name: apt update and upgrade all Proxmox Servers

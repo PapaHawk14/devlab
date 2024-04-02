@@ -1,5 +1,7 @@
 - hosts: vm
   become: yes
+  become_user: prox
+  become_method: su
   tasks:
     - name: Update timezone all VM's
       community.general.timezone:
