@@ -1,5 +1,7 @@
 - hosts: vm
   become: yes
+  become_user: root
+  become_method: su
   tasks:
     - name: apt update and upgrade all VM's and baremetal servers
       apt:
