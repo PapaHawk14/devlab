@@ -1,6 +1,6 @@
 - hosts: vm
   become: yes
-  become_user: prox
+  become_user: root
   become_method: su
   tasks:
     - name: Check disk space available
